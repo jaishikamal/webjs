@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML:FORM Example</title>
+    <style>
+      .bth {
+        margin: 20px 10px;
+        background-color: #0caa04;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <div class="">
+    <h1>HTML:FORMS</h1>
+    <H4>reistration form</H4>
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>personal information</legend>
+        <div class="gorup">
+          <label for="fname" class=""> name</label>
+          <input type="text" name="name" id="fname" required>
+        </div>
+        <div>
+          <label for="">Gender:</label>
+          <input type="radio" ID="male" NAME="male">
+          <label for="male">MALE</label>
+          <input type="radio" id="female" name="femal">
+          <label for="female">FEMAL</label>
+          <input type="radio" id="other" name="other">
+          <label for="other">other</label>
+        </div>
+        <div>
+          <label for="adress">Adress</label>
+          <input type="text" minlength="20" name="adress" id="adress" placeholder="enter your adress " required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="enter the your email">
+        </div>
+        <div>
+          <label for="phone">Phone number</label>
+          <input type="number" name="phone" required>
+        </div>
+        <div>
+          <label for="country">country</label>
+          <select name="country" id="country">
+            <option value="np">nepal</option>
+            <option value="ch">china</option>
+            <option value="us">Us</option>
+            <option value="Uk">uk</option>
+          </select>
+          <div>
+            <label for="pro">programming</label>
+            <input type="checkbox" value="java" name="java" id="java">java
+            <input type="checkbox" value="php" id="php">php
+            <input type="checkbox" id="python">python
+          </div>
+          <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" rows="3" cols="100" placeholder="write  the something" required>
+            </textarea>
+            <div>
+              <label for="image">Image</label>
+              <input type="file" name="image" id="image">
+            </div>
+
+      </fieldset>
+      <fieldset>
+        <legend>User lgin information</legend>
+        <div>
+          <label for="username">username</label>
+          <input type="text" name="username" id="username" required="required" placeholder="enter the your username">
+        </div>
+        <div>
+          <label for="password">password</label>
+          <input type="password" name="password" value="password" placeholder="********">
+        </div>
+
+      </fieldset>
+      <button class="bth" id="submitButton">Submit</button>
+      <input class="bth" type="button" id="canclebtn" value="Cancle" name="Cancle">
+    </form>
+  </div>
+
+  <body>
+
+  </body>
+
+</html>
